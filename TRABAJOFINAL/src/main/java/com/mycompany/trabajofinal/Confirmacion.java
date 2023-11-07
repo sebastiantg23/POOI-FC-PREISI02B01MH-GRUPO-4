@@ -6,11 +6,8 @@ package com.mycompany.trabajofinal;
 
 /**
  *
- * @author USER
+ * @author sebas
  */
-public class mainsito {
-    public static void main(String[] args) {
-         
-       
-    }
+public class Confirmacion {
+    
 }

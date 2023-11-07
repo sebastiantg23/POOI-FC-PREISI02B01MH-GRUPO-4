@@ -10,14 +10,19 @@ package com.mycompany.trabajofinal;
  */
 public class CuentaGanadora extends CuentaBancaria {
 
-    
+    private String ParticipacionSorteo;
     
     public CuentaGanadora(String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
         super(numeroCuenta, tipoCuenta, direccion, saldo, titular);
     }
     
+    public void setParticipacionSorteo(String ParticipacionSorteo) {
+        this.ParticipacionSorteo = ParticipacionSorteo;
+    }
+    
 
-    // Otros atributos y métodos específicos para la CuentaGanadora
-    // ...
+    public String getParticipacionSorteo() {
+        return "Usted ya esta participando del sorteo. ¡Muchas gracias por abrir su Cuenta Ganadora!";
+    }
 }
 

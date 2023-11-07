@@ -13,12 +13,11 @@ public class CuentaDeAhorro extends CuentaBancaria {
 
     // Constructor
 
-    public CuentaDeAhorro(double tasaInteres, String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
-        super(numeroCuenta, tipoCuenta, direccion, saldo, titular);
+    public CuentaDeAhorro(double tasaInteres, String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo) {
+        super(numeroCuenta, tipoCuenta, direccion, saldo);
         this.tasaInteres = tasaInteres;
     }
 
-    
 
     
     public double getTasaInteres() {

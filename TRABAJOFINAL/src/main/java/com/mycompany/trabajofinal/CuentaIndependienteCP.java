@@ -21,10 +21,6 @@ public class CuentaIndependienteCP extends CuentaBancaria {
         super(numeroCuenta, tipoCuenta, direccion, saldo, titular);
         this.comisionMensual = comisionMensual;
     }
-
-    
-    
-
-    
+ 
 }
 

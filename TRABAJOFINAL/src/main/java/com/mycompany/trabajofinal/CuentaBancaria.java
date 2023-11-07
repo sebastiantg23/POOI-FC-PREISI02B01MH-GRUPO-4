@@ -14,7 +14,7 @@ public class CuentaBancaria {
     private String tipoCuenta;
     private Direccion direccion;
     private double saldo;
-    private Usuario titular;
+    private Usuario titular;//arreglar la relacion entre usuario y cuenta bancaria   1 usuario puede tenre de 0 a *
 
     public CuentaBancaria(String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
         this.numeroCuenta = numeroCuenta;
