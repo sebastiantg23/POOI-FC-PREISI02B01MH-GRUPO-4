@@ -17,10 +17,20 @@ public class CuentaIndependienteCP extends CuentaBancaria {
 
     // Constructor
 
-    public CuentaIndependienteCP(double comisionMensual, String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
-        super(numeroCuenta, tipoCuenta, direccion, saldo, titular);
+    public CuentaIndependienteCP(double comisionMensual, String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo) {
+        super(numeroCuenta, tipoCuenta, direccion, saldo);
         this.comisionMensual = comisionMensual;
     }
+
+    public double getComisionMensual() {
+        return comisionMensual;
+    }
+
+    public void setComisionMensual(double comisionMensual) {
+        this.comisionMensual = comisionMensual;
+    }
+
+   
  
 }
 
