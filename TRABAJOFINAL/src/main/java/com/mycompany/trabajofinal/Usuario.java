@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.trabajofinal;
-
+import java.util.ArrayList;
+import java.util.List;
 /**
  *
  * @author sebas
@@ -13,17 +14,25 @@ public class Usuario {
     private String apellido;
     private String telefono;
     private String email;
+    private List<CuentaBancaria> cuentasBancarias;
+    
 
-    public Usuario(String nombre, String apellido, String telefono, String email) {
+    public Usuario(String nombre, String apellido, String telefono, String email, List<CuentaBancaria> cuentasBancarias) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.email = email;
+        this.cuentasBancarias = cuentasBancarias;
+    }
+    
+    public void agregarCuentaBancaria(CuentaBancaria cuenta) {
+        cuentasBancarias.add(cuenta);
     }
 
-    
+    public void eliminarCuentaBancaria(String numeroCuenta) {
+        cuentasBancarias.removeIf(cuenta -> cuenta.getNumeroCuenta().equals(numeroCuenta));
+    }
 
-    // Getters y setters para los atributos
     public String getNombre() {
         return nombre;
     }

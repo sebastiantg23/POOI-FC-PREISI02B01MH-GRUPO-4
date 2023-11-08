@@ -13,15 +13,16 @@ public class CuentaBancaria {
     private String numeroCuenta;
     private String tipoCuenta;
     private Direccion direccion;
-    private double saldo;
-    private Usuario titular;//arreglar la relacion entre usuario y cuenta bancaria   1 usuario puede tenre de 0 a *
+    private double saldo;//arreglar la relacion entre usuario y cuenta bancaria   1 usuario puede tenre de 0 a *
 
-    public CuentaBancaria(String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
+    public CuentaBancaria(String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo) {
         this.numeroCuenta = numeroCuenta;
         this.tipoCuenta = tipoCuenta;
+        this.direccion = direccion;
         this.saldo = saldo;
-        this.titular = titular;
     }
+
+    
 
     // Getters y setters para los atributos
     public String getNumeroCuenta() {
@@ -56,17 +57,10 @@ public class CuentaBancaria {
         this.saldo = saldo;
     }
 
-    public Usuario getTitular() {
-        return titular;
-    }
-
-    public void setTitular(Usuario titular) {
-        this.titular = titular;
-    }
-
     @Override
     public String toString() {
-        return "CuentaBancaria{" + "numeroCuenta=" + numeroCuenta + ", tipoCuenta=" + tipoCuenta + ", direccion=" + direccion + ", saldo=" + saldo + ", titular=" + titular + '}';
+        return "CuentaBancaria{" + "numeroCuenta=" + numeroCuenta + ", tipoCuenta=" + tipoCuenta + ", direccion=" + direccion + ", saldo=" + saldo + '}';
     }
+
     
 }

@@ -11,9 +11,10 @@ package com.mycompany.trabajofinal;
 public class CuentaGanadora extends CuentaBancaria {
 
     private String ParticipacionSorteo;
-    
-    public CuentaGanadora(String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo, Usuario titular) {
-        super(numeroCuenta, tipoCuenta, direccion, saldo, titular);
+
+    public CuentaGanadora(String ParticipacionSorteo, String numeroCuenta, String tipoCuenta, Direccion direccion, double saldo) {
+        super(numeroCuenta, tipoCuenta, direccion, saldo);
+        this.ParticipacionSorteo = ParticipacionSorteo;
     }
     
     public void setParticipacionSorteo(String ParticipacionSorteo) {
